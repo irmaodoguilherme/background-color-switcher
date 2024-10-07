@@ -1,3 +1,5 @@
+const buttonColorSwitcher = document.querySelector('[data-js="button-color-switcher"]')
+
 const getRandomNumber = max => Math.trunc(Math.random() * max)
 
 const getBackgroundColor = () => {
@@ -9,9 +11,13 @@ const getBackgroundColor = () => {
   return `rgb(${red}, ${green}, ${blue}, ${opacity}%)`
 }
 
-export const switchBackgroundColor = () => {
+const switchBackgroundColor = () => {
   const newBackgroundColor = getBackgroundColor()
   const body = document.body
 
   body.style.backgroundColor = newBackgroundColor
 }
+
+const handleButtonClick = async () => switchBackgroundColor()
+
+buttonColorSwitcher.addEventListener('click', handleButtonClick)
