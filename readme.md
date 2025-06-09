@@ -1,23 +1,58 @@
-## Sumário
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](/license.txt)
 
-- [Introdução](#introdução)
-- [Como acessar](#como-acessar)
-- [Como usá-la](#como-usá-la)
-- [Suporte](#suporte)
+## Table of contents
+- [How to use](#how-to-use)
+- [Demo](#demo)
+- [Technologies](#technologies)
+- [Functionality](#functionality)
+- [Support](#support)
+- [License](#license)
 
-**<h1 id="introdução">Background Color Switcher</h1>**
+# Background color switcher [🔝](#table-of-contents)
+A simple web app that let's you switch, or choose, the page's background color with a click, or choose a custom one.
 
-Um alternador de cores de fundo, criado com JavaScript puro.
+## Functionality
 
-<h2 id="como-acessar">Como acessar</h2>
+- Clean interface
+- Switch the page's background to a random color with each click or select a custom one
 
-Você pode acessá-lo [aqui](https://background-color-switcher-gal.netlify.app/) ou através do link na seção 'About'.
+## Demo
+[![loading...](src/background-color-switcher.gif)]()
 
+## How to use
 
-<h2 id="como-usá-la">Como usá-lo</h2>
+Clicking the button on the middle of the screen will change the background to a random color.
+The input below it allows for a custom color to be used.
 
-Clique no botão 'Switch background color' para alterar a cor de fundo.
+## How to locally run the project
 
-<h2 id="suporte">Suporte</h2>
+1. Clone the repository.
+```bash
+git clone https://github.com/irmaodoguilherme/background-color-switcher.git
+```
 
-Se você encontrar algum erro durante o uso da aplicação, por favor, abra uma 'Issue'. **Descreva o problema de forma clara e detalhada**, incluindo informações sobre o que aconteceu, quando ocorreu e o que você estava fazendo na ocasião.
+2. Navigate to the project's folder.
+```bash
+cd background-color-switcher
+```
+
+3. Run it locally using LiveServer in VSCode.
+
+> Alternative: Double click on the `index.html` file.
+
+## Technologies
+
+- JavaScript
+- HTML
+- CSS
+
+## Support [🔝](#table-of-contents)
+You can contact me through [contatoguilherme83@gmail.com](mailto:contatoguilherme83@gmail.com).
+
+I accept any recommendations regarding the application. I'd be happy to add a little piece of every new idea so another person could study it.
+
+Any found bugs can and should be reported through the `issues` section.
+
+## License [🔝](#table-of-contents)
+
+This project is licensed under the [MIT License](/license.txt)

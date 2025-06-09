@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US" class="h-100">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Color switcher</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/style.css">
+        <title>Background color switcher</title>
+    </head>
 
-<body class="text-white">
-  <button data-js="button-color-switcher" class="switch font-sys-ui text-white p-b-05r">Switch background color</button>
-  <p class="text-center bg-gray p-t-05r p-b-05r m-t-auto font-sys-ui">Desenvolvido por: <a
-      href="https://github.com/irmaodoguilherme?tab=repositories" class="text-cyan text-dec-none">Guilherme Aires</a>
-  </p>
-  <script type="module" src="./app.js"></script>
-</body>
+    <body class="h-100 bg-darkblue bg-transition">
+        <main>
+            <button class="bg-darkblue text-white button-switch-bg text-center word-wrap bg-transition" type="button" aria-label="Switch background color" data-button="switch-background-color">Switch background color</button>
+            <input type="color" name="background" data-input="background-color" aria-label="Switch background color">
+        </main>
+        <footer>
+            <p class="text-white text-center word-wrap">© 2025 Guilherme Aires. Licensed under the MIT license.</p>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
 
 </html>

@@ -1,23 +1,18 @@
-const buttonColorSwitcher = document.querySelector('[data-js="button-color-switcher"]')
+const body = document.body
+const inputBackgroundColor = document.querySelector('[data-input="background-color"]')
+const buttonSwitchBackgroundColor =
+    document.querySelector('[data-button="switch-background-color"]')
 
-const getRandomNumber = max => Math.trunc(Math.random() * max)
+const getRandomInt = () => Math.ceil(Math.random() * 100)
+const switchBackgroundColor = (el, color) => el.style.backgroundColor = color
+const getNewBackgroundColorTemplate = () =>
+    `rgb(${getRandomInt()}, ${getRandomInt()}, ${getRandomInt()})`
 
-const getBackgroundColor = () => {
-  const red = getRandomNumber(255)
-  const green = getRandomNumber(255)
-  const blue = getRandomNumber(255)
-  const opacity = getRandomNumber(100)
-
-  return `rgb(${red}, ${green}, ${blue}, ${opacity}%)`
+const handleButtonClick = () => {
+    const newBackgroundColorTemplate = getNewBackgroundColorTemplate()
+    switchBackgroundColor(body, newBackgroundColorTemplate)
 }
 
-const switchBackgroundColor = () => {
-  const newBackgroundColor = getBackgroundColor()
-  const body = document.body
-
-  body.style.backgroundColor = newBackgroundColor
-}
-
-const handleButtonClick = async () => switchBackgroundColor()
-
-buttonColorSwitcher.addEventListener('click', handleButtonClick)
+buttonSwitchBackgroundColor.addEventListener('click', handleButtonClick)
+inputBackgroundColor.addEventListener('input', e =>
+    switchBackgroundColor(body, e.target.value))
