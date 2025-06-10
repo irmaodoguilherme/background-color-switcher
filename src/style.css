@@ -72,4 +72,5 @@ footer {
   border-radius: .1rem;
   cursor: pointer;
   width: 297.55px;
+  max-width: 100%;
 }
