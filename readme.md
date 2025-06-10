@@ -9,6 +9,7 @@
 - [License](#license)
 
 # Background color switcher [🔝](#table-of-contents)
+
 A simple web app that let's you switch, or choose, the page's background color with a click, or choose a custom one.
 
 ## Functionality
@@ -38,7 +39,7 @@ cd background-color-switcher
 
 3. Run it locally using LiveServer in VSCode.
 
-> Alternative: Double click on the `index.html` file.
+> Alternative: Double click the `index.html` file.
 
 ## Technologies
 
