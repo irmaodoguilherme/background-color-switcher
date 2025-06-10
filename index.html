@@ -4,14 +4,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./src/favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="./src/style.css">
         <title>Background color switcher</title>
     </head>
 
     <body class="bg-darkblue bg-transition">
         <main>
-            <button class="bg-darkblue text-white button-switch-bg text-center word-wrap bg-transition" type="button" aria-label="Switch background color" data-button="switch-background-color">Switch background color</button>
-            <input type="color" name="background" data-input="background-color" aria-label="Switch background color">
+            <h1>Background color switcher</h1>
+            <button class="bg-darkblue text-white button-switch-bg text-center word-wrap bg-transition cursor-pointer" type="button" aria-label="Switch background color" data-button="switch-background-color">Switch background color</button>
+            <input class="cursor-pointer" title="Choose background color" type="color" name="background" data-input="background-color" aria-label="Switch background color">
         </main>
         <footer>
             <p class="text-white text-center word-wrap">© 2025 Guilherme Aires. Licensed under the MIT license.</p>
